@@ -100,6 +100,12 @@ input, select {
   vertical-align: middle;
 }
 
+body {
+  line-height: 1.5;
+  font-family: "Meiryo", sans-serif;
+  font-size: 14px;
+}
+
 img {
   max-width: 100%;
   height: auto;
