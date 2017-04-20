@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -12,6 +13,7 @@
     <meta name="description" content="サイトの説明">
     <meta name="keywords" content="キーワードA,キーワードB">
 </head>
+
 <body>
     <header id="header">
         <nav id="gnav">
@@ -27,53 +29,91 @@
     </header>
     <div id="content">
         <div id="main-visiul">
-        <h1 id="main-visiul-title">M’s Portfolio Site</h1>
-        <h1 id="main-visiul-sub">by Masaki Sato<br>from Hokkaido</h1>
+            <h1 id="main-visiul-title">M’s Portfolio Site</h1>
+            <h1 id="main-visiul-sub">by Masaki Sato<br>from Hokkaido</h1>
         </div>
+        <section id="top-about">
+            <h1 class="section-title">About</h1>
+            <h1 class="title-sub">制作者について</h1>
+            <div class="text-1">
+                <p>佐藤正規
+                    <br> 1992年3月15日生まれ
+                    <br> 北海道小樽市在住
+                </p>
+            </div>
+            <div class="text-2">
+                <p>大学院中退後、スーパーマーケット勤務を経て、札幌市内の食品卸売業者へ。そこでパソコンを使用した仕事に取り組んだことをきっかけに、自分が持つパソコンスキルを活かした仕事がしたいと考えるようになる。
+                    <br> 現在、求職者支援訓練でWebデザインについて勉強中。
+                </p>
+            </div>
+        </section>
+        <section id="top-skill">
+            <h1 class="section-title">Skill</h1>
+            <h1 class="title-sub">現在勉強中</h1>
+            <div class="text-1">
+                <p>デザイン系
+                    <br> Photoshop
+                </p>
+                <p>Web系
+                    <br> HTML5
+                    <br> CSS3
+                    <br> jQuery
+                    <br> レスポンシブWebデザイン
+                </p>
+            </div>
+        </section>
+        <section id="top-works">
+            <h1 class="section-title">Works</h1>
+            <ul class="works cf">
+                <li>
+                    <img src="" alt="">
+                </li>
+                <li>
+                    <img src="" alt="">
+                </li>
+                <li>
+                    <img src="" alt="">
+                </li>
+                <li>
+                    <img src="" alt="">
+                </li>
+            </ul>
+        </section>
+        <section id="top-contact">
+            <h1 class="section-title">Contact</h1>
+            <h1 class="title-sub">お問い合わせは、以下のフォームよりお願いします。</h1>
+            <form action="#">
+                <p>
+                    <label for="name">お名前（必須）
+                        <br>
+                        <input type="text" name="name" id="name" required>
+                    </label>
+                </p>
+                <p>
+                    <label for="mailaddress">メールアドレス（必須）
+                        <br>
+                        <input type="email" name="mailaddress" id="mailaddress" required>
+                    </label>
+                </p>
+                <p>
+                    <label for="freespace">内容</label>
+                    <br>
+                    <textarea name="freespace" id="freespace"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="ご記入内容の確認">
+                    <input type="reset" value="クリア">
+                </p>
+            </form>
+            <h1 class="title-sub">下記のメールアドレスからの送信も可能です。<br>
+   <a href="msato20161128@gmail.com">msato20161128@gmail.com</a></h1>
+        </section>
     </div>
-    <section id="top-about">
-        <h1 class="section-title">About</h1>
-        <h1 class="title-sub">制作者について</h1>
-        <div class="text-1">
-            <p>佐藤正規<br>
-            1992年3月15日生まれ<br>
-            北海道小樽市在住</p>
-        </div>
-        <div class="text-2">
-            <p>大学院中退後、スーパーマーケット勤務を経て、札幌市内の食品卸売業者へ。そこでパソコンを使用した仕事に取り組んだことをきっかけに、自分が持つパソコンスキルを活かした仕事がしたいと考えるようになる。<br>
-            現在、求職者支援訓練でWebデザインについて勉強中。</p>
-        </div>
-    </section>
-    <section id="top-skill">
-        <h1 class="section-title">Skill</h1>
-        <h1 class="title-sub">現在勉強中</h1>
-        <div class="text-1">
-            <p>デザイン系<br>
-            Photoshop</p>
-            <p>Web系<br>
-            HTML5<br>
-            CSS3<br>
-            jQuery<br>
-            レスポンシブWebデザイン</p>
-        </div>
-    </section>
-    <section id="top-works">
-        <h1 class="section-title">Works</h1>
-        <ul class="works cf">
-            <li>
-                <img src="" alt="">
-            </li>
-            <li>
-                <img src="" alt="">
-            </li>
-            <li>
-                <img src="" alt="">
-            </li>
-            <li>
-                <img src="" alt="">
-            </li>
-        </ul>
-    </section>
-    <section id="top-contact"></section>
+    <footer id="footer">
+        <p id="copyright">
+            <small>Copyrights (c) Masaki Sato All Rights Reserved.</small>
+        </p>
+    </footer>
 </body>
+
 </html>
