@@ -43,3 +43,13 @@
         font-family: 'Playfair Display', serif;
     }
 }
+
+@media screen and (min-width:1170px){
+    #nav-btn {
+        display: none;
+}
+    
+    #gnav{
+        display: block;
+    }
+}
