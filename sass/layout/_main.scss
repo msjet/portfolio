@@ -3,20 +3,22 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    text-align: center;
+    height: 649px;
     #main-visiul-title{
         color: #f00;
-        font-size: 30px;
-        line-height: 1.1;
+        font-size: 48px;
+        line-height: 120px;
         font-family: 'Abril Fatface', cursive;
         font-weight: normal;
 //        white-space: nowrap;
         }
     #main-visiul-sub{
         color: #f00;
-        font-size: 18px;
+        font-size: 24px;
+        line-height: 1.1;
         font-family: 'Changa One', cursive;
         font-weight: normal;
+        text-align: center;
         }
 }
 
@@ -78,4 +80,26 @@
 
 .form1{
     margin-bottom: 30px;
+}
+
+@media screen and (min-width:640px){
+    #main-visiul {
+    #main-visiul-title{
+        font-size: 54px;
+        }
+    #main-visiul-sub{
+        font-size: 36px;
+}
+}
+}
+
+@media screen and (min-width:1170px){
+    #main-visiul {
+    #main-visiul-title{
+        font-size: 72px;
+        }
+    #main-visiul-sub{
+        font-size: 48px;
+}
+}
 }
