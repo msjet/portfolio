@@ -160,7 +160,7 @@ img {
 #gnav a {
   display: block;
   background-color: #88b3da;
-  line-height: 25px;
+  line-height: 1.1;
   text-decoration: none;
   font-weight: normal;
   text-align: left;
@@ -177,6 +177,8 @@ img {
   }
   #gnav a {
     float: right;
+    background: none;
+    color: #fff;
   }
 }
 
@@ -186,23 +188,36 @@ img {
   background-position: center center;
   background-size: cover;
   height: 649px;
+  position: relative;
+  /*    #main-visiul-sub{
+        color: #f00;
+        font-size: 24px;
+        position: absolute;
+        font-family: 'Changa One', cursive;
+        font-weight: normal;
+        text-align: center;
+        }*/
 }
 
 #main-visiul #main-visiul-title {
   color: #f00;
-  font-size: 48px;
-  line-height: 120px;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-family: 'Abril Fatface', cursive;
   font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
 }
 
-#main-visiul #main-visiul-sub {
-  color: #f00;
+#main-visiul #main-visiul-title span {
+  display: block;
   font-size: 24px;
-  line-height: 1.1;
   font-family: 'Changa One', cursive;
-  font-weight: normal;
-  text-align: center;
 }
 
 #top-about {
@@ -269,7 +284,7 @@ img {
   #main-visiul #main-visiul-title {
     font-size: 54px;
   }
-  #main-visiul #main-visiul-sub {
+  #main-visiul #main-visiul-title span {
     font-size: 36px;
   }
 }

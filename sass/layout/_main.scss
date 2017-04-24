@@ -4,22 +4,33 @@
     background-position: center center;
     background-size: cover;
     height: 649px;
+    position: relative;
     #main-visiul-title{
         color: #f00;
-        font-size: 48px;
-        line-height: 120px;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
         font-family: 'Abril Fatface', cursive;
         font-weight: normal;
-//        white-space: nowrap;
+        text-align: center;
+        white-space: nowrap;
+        span{
+            display: block;
+            font-size: 24px;
+            font-family: 'Changa One', cursive;
         }
-    #main-visiul-sub{
+        }
+/*    #main-visiul-sub{
         color: #f00;
         font-size: 24px;
-        line-height: 1.1;
+        position: absolute;
         font-family: 'Changa One', cursive;
         font-weight: normal;
         text-align: center;
-        }
+        }*/
 }
 
 #top-about{
@@ -83,13 +94,13 @@
 }
 
 @media screen and (min-width:640px){
-    #main-visiul {
+#main-visiul {
     #main-visiul-title{
         font-size: 54px;
+        span{
+            font-size: 36px;
         }
-    #main-visiul-sub{
-        font-size: 36px;
-}
+        }
 }
 }
 
