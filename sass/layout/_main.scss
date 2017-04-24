@@ -21,6 +21,7 @@
 }
 
 #top-about{
+    padding: 44px 0 44px 0;
     background-color: #88b3da;
 }
 
@@ -41,7 +42,7 @@
 }
 
 .title-sub{
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
     margin-bottom: 31px;
 }
@@ -51,10 +52,30 @@
 }
 
 .bg2{
+    text-align: center;
+    padding: 32px 15px 37px 26px;
     margin: 75px 0 67px 0;
+}
+
+#top-works{
+    padding: 44px 0 44px 0;
+    background-color: #88b3da;
 }
 
 .works{
     width: 56%;
     margin: 0 auto;
+}
+
+.works li {
+    list-style-type: none;
+    float: left;
+    width: 180px;
+    height: 308px;
+    margin: 0 62px 28px 0;
+    position: relative;
+}
+
+.form1{
+    margin-bottom: 30px;
 }

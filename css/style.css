@@ -104,7 +104,7 @@ body {
   color: #000;
   line-height: 1.5;
   font-family: "Meiryo", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 img {
@@ -190,6 +190,7 @@ img {
 }
 
 #top-about {
+  padding: 44px 0 44px 0;
   background-color: #88b3da;
 }
 
@@ -210,7 +211,7 @@ img {
 }
 
 .title-sub {
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   margin-bottom: 31px;
 }
@@ -220,10 +221,59 @@ img {
 }
 
 .bg2 {
+  text-align: center;
+  padding: 32px 15px 37px 26px;
   margin: 75px 0 67px 0;
+}
+
+#top-works {
+  padding: 44px 0 44px 0;
+  background-color: #88b3da;
 }
 
 .works {
   width: 56%;
   margin: 0 auto;
+}
+
+.works li {
+  list-style-type: none;
+  float: left;
+  width: 180px;
+  height: 308px;
+  margin: 0 62px 28px 0;
+  position: relative;
+}
+
+.form1 {
+  margin-bottom: 30px;
+}
+
+#footer {
+  clear: both;
+  background-color: #000000;
+}
+
+#footer p {
+  text-align: center;
+  padding: 34px 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+#pagetop {
+  display: block;
+  width: 150px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #f00;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
 }
