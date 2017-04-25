@@ -119,9 +119,9 @@ img {
 }
 
 #header {
-  height: 54px;
+  height: 100px;
   background-color: #000;
-  padding-top: 19px;
+  padding: 19px 40px 0 50px;
 }
 
 #logo {
@@ -134,27 +134,70 @@ img {
   font-family: 'Abril Fatface', cursive;
 }
 
-#nav-btn {
-  display: block;
+.menu,
+.menu span {
+  display: inline-block;
+  -webkit-transition: .4s;
+  transition: .4s;
+  box-sizing: border-box;
+}
+
+.menu {
   float: right;
+  width: 28px;
+  height: 25px;
   position: relative;
-  right: 20px;
+  display: block;
+}
+
+.menu span {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.menu span:nth-child(1) {
+  top: 0;
+}
+
+.menu span:nth-child(2) {
+  top: 10px;
+}
+
+.menu span:nth-child(3) {
+  bottom: 0;
+}
+
+.menu.active span:nth-child(1) {
   top: 20px;
-  text-indent: -9999px;
-  width: 18px;
-  height: 18px;
-  background: url(../img/header_button.png);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu.active span:nth-child(2) {
+  top: 20px;
+  opacity: 0;
+}
+
+.menu.active span:nth-child(3) {
+  top: 20px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 #gnav {
   position: absolute;
   top: 58px;
-  width: 100%;
+  width: 50%;
   display: none;
 }
 
 #gnav li {
   list-style-type: none;
+  border-bottom: 1px solid #000;
 }
 
 #gnav a {
@@ -168,15 +211,32 @@ img {
   font-family: 'Playfair Display', serif;
 }
 
+@media screen and (min-width: 640px) {
+  #logo {
+    font-size: 36px;
+  }
+  .menu {
+    margin-top: 20px;
+  }
+}
+
 @media screen and (min-width: 1170px) {
-  #nav-btn {
+  #logo {
+    font-size: 48px;
+    margin-right: 295px;
+  }
+  .menu {
     display: none;
   }
   #gnav {
+    width: 100%;
+    position: static;
     display: block;
   }
   #gnav a {
-    float: right;
+    margin-top: 30px;
+    margin-right: 52px;
+    float: left;
     background: none;
     color: #fff;
   }
@@ -249,6 +309,7 @@ img {
 
 .text-1 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .bg2 {
@@ -287,6 +348,15 @@ img {
   #main-visiul #main-visiul-title span {
     font-size: 36px;
   }
+  .works {
+    width: 79%;
+  }
+  .works li {
+    margin: 0 62px 36px 0;
+  }
+  .works li:last-child {
+    margin: 0 0 36px 0;
+  }
 }
 
 @media screen and (min-width: 1170px) {
@@ -295,6 +365,23 @@ img {
   }
   #main-visiul #main-visiul-sub {
     font-size: 48px;
+  }
+  .bg {
+    background-color: #fff;
+    padding: 68px 121px 54px 127px;
+    margin: 44px 67px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .works {
+    width: 85%;
+  }
+  .works li {
+    float: left;
+    margin: 0 90px 75px 90px;
+  }
+  .works li:last-child {
+    margin: 0 0 75px 90px;
   }
 }
 
