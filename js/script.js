@@ -25,22 +25,4 @@ $(function () {
         return false;
     });
 
-    var navPos = $('#header').offset().top;
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > navPos) {
-            $('#header').css('position', 'fixed');
-        } else {
-            $('#header').css('position', 'static');
-        }
-    });
-
-    $('#gnav a').click(function () {
-        var target = $($(this).attr('href')).offset().top;
-        target += 20;
-        $('html,body').animate({
-            scrollTop: target
-        }, 500);
-
-        return false;
-    });
 });

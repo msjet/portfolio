@@ -148,6 +148,7 @@ img {
   height: 25px;
   position: relative;
   display: block;
+  margin-top: 21px;
 }
 
 .menu span {
@@ -233,6 +234,9 @@ img {
     position: static;
     display: block;
   }
+  #gnav li {
+    border-bottom: none;
+  }
   #gnav a {
     margin-top: 30px;
     margin-right: 52px;
@@ -287,7 +291,7 @@ img {
 
 .bg {
   background-color: #fff;
-  padding: 32px 15px 37px 26px;
+  padding: 32px 26px 37px 26px;
   margin: 44px 67px;
   box-sizing: border-box;
   border-radius: 10px;
@@ -314,7 +318,7 @@ img {
 
 .bg2 {
   text-align: center;
-  padding: 32px 15px 37px 26px;
+  padding: 32px 26px 37px 26px;
   margin: 75px 0 67px 0;
 }
 
@@ -331,9 +335,7 @@ img {
 .works li {
   list-style-type: none;
   float: left;
-  width: 180px;
-  height: 308px;
-  margin: 0 62px 28px 0;
+  margin: 0 0 28px 0;
   position: relative;
 }
 
@@ -348,14 +350,17 @@ img {
   #main-visiul #main-visiul-title span {
     font-size: 36px;
   }
+  .bg {
+    padding: 32px 127px 54px 127px;
+  }
   .works {
-    width: 79%;
+    width: 80%;
   }
   .works li {
-    margin: 0 62px 36px 0;
+    margin: 0 39px 36px 39px;
   }
   .works li:last-child {
-    margin: 0 0 36px 0;
+    margin: 0 39px 36px 39px;
   }
 }
 
@@ -366,13 +371,6 @@ img {
   #main-visiul #main-visiul-sub {
     font-size: 48px;
   }
-  .bg {
-    background-color: #fff;
-    padding: 68px 121px 54px 127px;
-    margin: 44px 67px;
-    box-sizing: border-box;
-    border-radius: 10px;
-  }
   .works {
     width: 85%;
   }
@@ -381,7 +379,7 @@ img {
     margin: 0 90px 75px 90px;
   }
   .works li:last-child {
-    margin: 0 0 75px 90px;
+    margin: 0 90px 75px 90px;
   }
 }
 
