@@ -128,7 +128,7 @@ img {
   padding: 19px 0;
   float: left;
   color: #f00;
-  font-size: 24px;
+  font-size: 36px;
   line-height: 1.1;
   font-weight: normal;
   font-family: 'Abril Fatface', cursive;
@@ -148,7 +148,7 @@ img {
   height: 25px;
   position: relative;
   display: block;
-  margin-top: 21px;
+  margin-top: 26px;
 }
 
 .menu span {
@@ -212,19 +212,10 @@ img {
   font-family: 'Playfair Display', serif;
 }
 
-@media screen and (min-width: 640px) {
-  #logo {
-    font-size: 36px;
-  }
-  .menu {
-    margin-top: 20px;
-  }
-}
-
 @media screen and (min-width: 1170px) {
   #logo {
     font-size: 48px;
-    margin-right: 295px;
+    margin-right: 153px;
   }
   .menu {
     display: none;
@@ -265,7 +256,7 @@ img {
 
 #main-visiul #main-visiul-title {
   color: #f00;
-  font-size: 30px;
+  font-size: 48px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -280,7 +271,7 @@ img {
 
 #main-visiul #main-visiul-title span {
   display: block;
-  font-size: 24px;
+  font-size: 36px;
   font-family: 'Changa One', cursive;
 }
 
@@ -327,6 +318,14 @@ img {
   background-color: #88b3da;
 }
 
+.bg3 {
+  background-color: #fff;
+  padding: 32px 26px 37px 26px;
+  margin: 44px 67px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
 .works {
   width: 56%;
   margin: 0 auto;
@@ -353,13 +352,13 @@ img {
   .bg {
     padding: 32px 127px 54px 127px;
   }
+  .bg3 {
+    padding: 32px 80px 54px 80px;
+  }
   .works {
     width: 80%;
   }
   .works li {
-    margin: 0 39px 36px 39px;
-  }
-  .works li:last-child {
     margin: 0 39px 36px 39px;
   }
 }
@@ -375,11 +374,10 @@ img {
     width: 85%;
   }
   .works li {
-    float: left;
     margin: 0 90px 75px 90px;
   }
-  .works li:last-child {
-    margin: 0 90px 75px 90px;
+  .works li:nth-child(2n) {
+    margin: 0 0 75px 90px;
   }
 }
 

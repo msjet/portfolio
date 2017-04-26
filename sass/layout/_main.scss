@@ -7,7 +7,7 @@
     position: relative;
     #main-visiul-title {
         color: #f00;
-        font-size: 30px;
+        font-size: 48px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -19,7 +19,7 @@
         white-space: nowrap;
         span {
             display: block;
-            font-size: 24px;
+            font-size: 36px;
             font-family: 'Changa One', cursive;
         }
     }
@@ -76,6 +76,13 @@
     background-color: #88b3da;
 }
 
+.bg3 {
+    background-color: #fff;
+    padding: 32px 26px 37px 26px;
+    margin: 44px 67px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
 .works {
     width: 56%;
     margin: 0 auto;
@@ -104,14 +111,14 @@
     .bg {
         padding: 32px 127px 54px 127px;
     }
+    .bg3 {
+        padding: 32px 80px 54px 80px;
+    }
     .works {
         width: 80%;
     }
-    .works li {
+    .works li{
         margin: 0 39px 36px 39px;
-        &:last-child {
-            margin: 0 39px 36px 39px;
-        }
     }
 }
 
@@ -128,10 +135,9 @@
         width: 85%;
     }
     .works li {
-        float: left;
         margin: 0 90px 75px 90px;
-        &:last-child {
-            margin: 0 90px 75px 90px;
+        &:nth-child(2n){
+            margin: 0 0 75px 90px;
         }
     }
 }
