@@ -23,14 +23,6 @@
             font-family: 'Changa One', cursive;
         }
     }
-    /*    #main-visiul-sub{
-        color: #f00;
-        font-size: 24px;
-        position: absolute;
-        font-family: 'Changa One', cursive;
-        font-weight: normal;
-        text-align: center;
-        }*/
 }
 
 #top-about {
@@ -48,7 +40,7 @@
 
 .section-title {
     color: #f00;
-    font-size: 36px;
+    font-size: 30px;
     font-family: 'Changa One', cursive;
     text-align: center;
     margin-bottom: 33px;
@@ -83,6 +75,7 @@
     box-sizing: border-box;
     border-radius: 10px;
 }
+
 .works {
     width: 56%;
     margin: 0 auto;
@@ -99,7 +92,7 @@
     margin-bottom: 30px;
 }
 
-@media screen and (min-width:640px) {
+@media screen and (min-width:600px) {
     #main-visiul {
         #main-visiul-title {
             font-size: 54px;
@@ -107,6 +100,15 @@
                 font-size: 36px;
             }
         }
+    }
+    .title-sub {
+        font-size: 20px;
+    }
+    .text-1 {
+        font-size: 18px;
+    }
+    .text-2 {
+        font-size: 18px;
     }
     .bg {
         padding: 32px 127px 54px 127px;
@@ -117,27 +119,45 @@
     .works {
         width: 80%;
     }
-    .works li{
+    .works li {
         margin: 0 39px 36px 39px;
+    }
+    .form1 p {
+        font-size: 18px;
     }
 }
 
-@media screen and (min-width:1170px) {
+@media screen and (min-width:960px) {
     #main-visiul {
         #main-visiul-title {
             font-size: 72px;
+            span {
+                font-size: 48px;
+            }
         }
-        #main-visiul-sub {
-            font-size: 48px;
-        }
+    }
+    .section-title {
+        font-size: 36px;
+    }
+    .title-sub {
+        font-size: 24px;
+    }
+    .text-1 {
+        font-size: 20px;
+    }
+    .text-2 {
+        font-size: 20px;
     }
     .works {
         width: 85%;
     }
     .works li {
         margin: 0 90px 75px 90px;
-        &:nth-child(2n){
-            margin: 0 0 75px 90px;
+        &:nth-child(2n) {
+            margin: 0 0px 75px 0px;
         }
+    }
+    .form1 p {
+        font-size: 24px;
     }
 }
