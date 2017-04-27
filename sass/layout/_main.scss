@@ -85,7 +85,9 @@
 .works li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 0 28px 0;
+    margin-bottom: 28px;
+    margin-right: 31px;
+    margin-left: 31px;
     position: relative;
 }
 
@@ -117,11 +119,8 @@
     .bg3 {
         padding: 32px 80px 54px 80px;
     }
-    .works {
-//        width: 80%;
-    }
     .works li {
-        margin: 0 0 36px 0;
+        margin-bottom: 36px;
     }
     .form1 p {
         font-size: 18px;
@@ -148,15 +147,6 @@
     }
     .text-2 {
         font-size: 20px;
-    }
-    .works {
-//        width: 85%;
-    }
-    .works li {
-//        margin: 0 90px 75px 90px;
-        &:nth-child(2n) {
-//            margin: 0 0px 75px 0px;
-        }
     }
     .form1 p {
         font-size: 24px;
