@@ -338,13 +338,14 @@ img {
 }
 
 .works {
-  width: 56%;
   margin: 0 auto;
+  text-align: center;
+  font-size: 0;
 }
 
 .works li {
   list-style-type: none;
-  float: left;
+  display: inline-block;
   margin: 0 0 28px 0;
   position: relative;
 }
@@ -375,11 +376,8 @@ img {
   .bg3 {
     padding: 32px 80px 54px 80px;
   }
-  .works {
-    width: 80%;
-  }
   .works li {
-    margin: 0 39px 36px 39px;
+    margin: 0 0 36px 0;
   }
   .form1 p {
     font-size: 18px;
@@ -404,15 +402,6 @@ img {
   }
   .text-2 {
     font-size: 20px;
-  }
-  .works {
-    width: 85%;
-  }
-  .works li {
-    margin: 0 90px 75px 90px;
-  }
-  .works li:nth-child(2n) {
-    margin: 0 0px 75px 0px;
   }
   .form1 p {
     font-size: 24px;
