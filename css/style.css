@@ -313,6 +313,16 @@ img {
   margin-bottom: 31px;
 }
 
+.title-sub span {
+  font-family: 'Timmana', sans-serif;
+}
+
+.title-sub span a {
+  font-size: 30px;
+  color: #000;
+  text-decoration: none;
+}
+
 .text-1 {
   text-align: center;
   margin-bottom: 20px;

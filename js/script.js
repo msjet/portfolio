@@ -26,7 +26,6 @@ $(function () {
     });
     
     $('#gnav a').click(function () {
-        //        $(this).attr('href');
         var target = $($(this).attr('href')).offset().top;
         target -= 0;
         $('html,body').animate({
