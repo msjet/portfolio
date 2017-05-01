@@ -34,4 +34,35 @@ $(function () {
 
         return false;
     });
+    
+    $('#top-works a').click(function () {
+
+        $('body').append('<div id="bg">');
+        $('body').append('<div id="samplesite">');
+
+        $('#bg').hide();
+        $('#samplesite').hide();
+
+        $('#samplesite').html('<img>');
+
+        $('#samplesite img').attr('src', $(this).attr('href'));
+
+        $('#samplesite img').attr('width', 100%);
+        $('#samplesite img').attr('height', 100%);
+        $('#samplesite img').attr('alt', 'Photo');
+
+        $('#bg').fadeIn();
+        $('#samplesite').fadeIn();
+
+        $('#bg,#samplesite').click(function () {
+            $(this).fadeOut(function () {
+                $(this).remove();
+            });
+            $('#samplesite').fadeOut(function () {
+                $(this).remove();
+            });
+        });
+
+        return false;
+    });
 });
