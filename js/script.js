@@ -24,7 +24,7 @@ $(function () {
         $(this).toggleClass('active');
         return false;
     });
-    
+
     $('#gnav a').click(function () {
         var target = $($(this).attr('href')).offset().top;
         target -= 0;
@@ -34,35 +34,19 @@ $(function () {
 
         return false;
     });
-    
-//    $('#top-works a').click(function () {
-//
-//        $('body').append('<div id="bg">');
-//        $('body').append('<div id="samplesite">');
-//
-//        $('#bg').hide();
-//        $('#samplesite').hide();
-//
-//        $('#samplesite').html('<img>');
-//
-//        $('#samplesite img').attr('src', $(this).attr('href'));
-//
-//        $('#samplesite img').attr('width', 205);
-//        $('#samplesite img').attr('height', 650);
-//        $('#samplesite img').attr('alt', 'Photo');
-//
-//        $('#bg').fadeIn();
-//        $('#samplesite').fadeIn();
-//
-//        $('#bg, #samplesite').click(function () {
-//            $("#bg").fadeOut(function () {
-//                $(this).remove();
-//            });
-//            $('#samplesite').fadeOut(function () {
-//                $(this).remove();
-//            });
-//        });
-//
-//        return false;
-//    });
+
+    $('.works a').hover(function () {
+        $(this).append('<div><p>' + $(this).children('img').attr('alt') + '</p></div>');
+        $(this).children('div').stop().fadeIn(300);
+        $(this).children('div').children('p').stop().animate({
+            'top': 0
+        }, 300);
+    }, function () {
+        $(this).children('div').stop().fadeOut(300);
+        $(this).children('div').children('p').stop().animate({
+            'top': '10px'
+        }, 300, function () {
+            $(this).parent('div').remove();
+        });
+    });
 });
